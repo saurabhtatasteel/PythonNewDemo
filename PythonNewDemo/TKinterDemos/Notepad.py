@@ -23,6 +23,7 @@ class MyNotepad:
             mytextbox.insert(tk.END, myfileData)
             #testing act 5
             #new testing act 6
+            #new testing act 7
             myWindow.title(openedFileName)
 
         def SaveFile(mytextbox):
