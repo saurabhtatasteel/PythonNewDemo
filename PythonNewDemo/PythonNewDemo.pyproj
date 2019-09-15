@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>01fb8bf3-c8ed-4db4-beb8-c81d4810fe1d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>AssignmentTask1.py</StartupFile>
+    <StartupFile>TKinterDemos\module1.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,13 +22,40 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="ClassesDemo.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ClassLaptop.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="DBDemo.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="AssignmentTask1.py">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="ObjectsDemo.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="PythonNewDemo.py" />
+    <Compile Include="TKinterDemos\module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TKinterDemos\Notepad.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TKinterDemos\Registration Form.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TKinterDemos\Simple Calculator.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TKinterDemos\TKinterDemo.py">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TKinterDemos\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

@@ -30,6 +30,14 @@ x/=3
 
 print(x)
 
+i=1;  
+while i>=10:  
+    print(i);  
+    i=i+1;
+else: print("nothing")
+
+      
+
         
 
 
