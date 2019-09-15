@@ -21,6 +21,7 @@ class MyNotepad:
             openFile.close()
             mytextbox.delete('1.0', END)
             mytextbox.insert(tk.END, myfileData)
+            #testing editing
             myWindow.title(openedFileName)
 
         def SaveFile(mytextbox):
