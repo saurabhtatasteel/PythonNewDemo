@@ -20,10 +20,7 @@ class MyNotepad:
             myfileData = openFile.read()
             openFile.close()
             mytextbox.delete('1.0', END)
-            mytextbox.insert(tk.END, myfileData)
-            #testing act 5
-            #new testing act 6
-            #new testing act 7
+            mytextbox.insert(tk.END, myfileData)            
             myWindow.title(openedFileName)
 
         def SaveFile(mytextbox):
@@ -134,6 +131,29 @@ class MyNotepad:
             cancelButton.pack(side = LEFT)
             frame.grid(row=2, column=0, columnspan=3)
 
+        def Find(self):
+            findWindow=Toplevel(self.master)
+            findWindow.geometry("400x200")
+            findWindow.resizable(0,0)
+            findWindow.title("Find")
+
+        def selection():  
+            selection = "You selected the option " + str(radio.get())  
+            label.config(text = selection) 
+            
+            frame = Frame(findWindow)
+                            
+            lbl = Label(text = "Direction")  
+            lbl.pack() 
+
+            R1 = Radiobutton(frame, text="Up", variable=radio, value=1,command=selection)                    
+            R1.pack( anchor = CENTER )  
+  
+            R2 = Radiobutton(frame, text="Down", variable=radio, value=2,command=selection)                                  
+            R2.pack( anchor = CENTER )  
+
+            frame.grid(row=1, column=0, columnspan=2)
+
 
         def ExitFile(openedWindow):
             #if tkMessageBox.askokcancel("Quit", "You want to quit now? *sniff*"): 
@@ -198,7 +218,7 @@ class MyNotepad:
         
         edit.add_separator()
         edit.add_command(label="Replace", command=lambda:Replace(myWindow))
-        edit.add_command(label="Find")
+        edit.add_command(label="Find", command=lambda:Find(myWindow))
         edit.add_command(label="Find Next")
         menubar.add_cascade(label="Edit", menu=edit)  
 

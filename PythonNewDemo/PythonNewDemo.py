@@ -10,7 +10,7 @@ for x in fruits:
 
 print("")
 
-fruits = ["apple", "banana", "cherry"]
+fruits = ["apple", "banana", "Coconut"]
 for x in fruits:
   if x == "banana":
     break

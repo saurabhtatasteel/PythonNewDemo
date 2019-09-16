@@ -11,7 +11,7 @@ class Employee:
         print("Total Employee : ", Employee.empCount)
 
     def displayEmployee(self):
-        print("Name : ", self.EmployeeName, ", Salary : ", self.EmployeeSalary)
+        print("Name : ", self.EmployeeName, ", Total Salary : ", self.EmployeeSalary)
 
 
 
