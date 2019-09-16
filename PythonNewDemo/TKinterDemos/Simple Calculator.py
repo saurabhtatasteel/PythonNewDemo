@@ -28,6 +28,7 @@ class MyGUI:
                     MyGUI.param2 = float(self.resultLabel.cget("text"))
                     self.resultLabel.configure(text="")
                     if(MyGUI.operator == "+"):
+                        # plus operator handled
                         MyGUI.result = MyGUI.param1 + MyGUI.param2                        
                     elif(MyGUI.operator == "-"):
                         MyGUI.result = MyGUI.param1 - MyGUI.param2
