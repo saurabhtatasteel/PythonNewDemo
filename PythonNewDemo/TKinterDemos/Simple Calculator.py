@@ -45,6 +45,7 @@ class MyGUI:
                     MyGUI.operator = ''
                     self.resultLabel.configure(text=MyGUI.result)
                 elif(btnClicked == "C"):
+                    # resetting all the variables/properties
                     MyGUI.result = ''   
                     MyGUI.param1 =''
                     MyGUI.param2 = ''
