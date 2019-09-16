@@ -15,6 +15,7 @@ class MyGUI:
             if(str(btnClicked).isnumeric() or btnClicked == "."):
 
                 if(MyGUI.operator == ''):
+                    # assigning operator 1
                     if((btnClicked == "." and str(self.resultLabel.cget("text")).find(".")==-1) or btnClicked != "."):
                         tempParam1 = str(self.resultLabel.cget("text")) + str(btnClicked)
                         self.resultLabel.configure(text=tempParam1)
@@ -37,6 +38,7 @@ class MyGUI:
                         # multiplication operator
                         MyGUI.result = MyGUI.param1 * MyGUI.param2
                     elif(MyGUI.operator == "/"):
+                        # division operator
                         MyGUI.result = MyGUI.param1 / MyGUI.param2
 
                     MyGUI.param1 = MyGUI.result
@@ -44,6 +46,7 @@ class MyGUI:
                     MyGUI.operator = ''
                     self.resultLabel.configure(text=MyGUI.result)
                 elif(btnClicked == "C"):
+                    # resetting all the variables/properties
                     MyGUI.result = ''   
                     MyGUI.param1 =''
                     MyGUI.param2 = ''
