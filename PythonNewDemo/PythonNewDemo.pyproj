@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>01fb8bf3-c8ed-4db4-beb8-c81d4810fe1d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>TKinterDemos\module1.py</StartupFile>
+    <StartupFile>TKinterDemos\Registration Form.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
