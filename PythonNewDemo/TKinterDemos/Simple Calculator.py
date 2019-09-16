@@ -37,6 +37,7 @@ class MyGUI:
                         # multiplication operator
                         MyGUI.result = MyGUI.param1 * MyGUI.param2
                     elif(MyGUI.operator == "/"):
+                        # division operator
                         MyGUI.result = MyGUI.param1 / MyGUI.param2
 
                     MyGUI.param1 = MyGUI.result
