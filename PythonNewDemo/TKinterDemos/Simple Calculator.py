@@ -31,6 +31,7 @@ class MyGUI:
                         # plus operator handled
                         MyGUI.result = MyGUI.param1 + MyGUI.param2                        
                     elif(MyGUI.operator == "-"):
+                        # minus operator handled
                         MyGUI.result = MyGUI.param1 - MyGUI.param2
                     elif(MyGUI.operator == "*"):
                         MyGUI.result = MyGUI.param1 * MyGUI.param2
