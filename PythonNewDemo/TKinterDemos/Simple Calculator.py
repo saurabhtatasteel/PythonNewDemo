@@ -21,7 +21,7 @@ class MyGUI:
                         self.resultLabel.configure(text=tempParam1)
 
                 elif (MyGUI.operator != ''):
-                    # assigning operator 2
+                    # assign operator 2
                     if((btnClicked == "." and str(self.resultLabel.cget("text")).find(".")==-1) or btnClicked != "."):
                         tempParam2 = str(self.resultLabel.cget("text")) + str(btnClicked)
                         self.resultLabel.configure(text=tempParam2)
